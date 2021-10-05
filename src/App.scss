@@ -1,0 +1,39 @@
+@import "./utilities/variables";
+
+.App {
+  min-height: 100vh;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font;
+}
+
+.light-bg{
+  background-color: $Very-Light-Gray;
+  color: $Light-Very-Dark-Blue;
+}
+.dark-bg{
+  background-color: $Dark-Very-Dark-Blue;
+  color: $White;
+  
+}
+
+.light-el{
+  background-color: $White;
+  color: $Light-Very-Dark-Blue;
+  box-shadow: 0px 1px 10px -6px grey;
+}
+.dark-el{
+  background-color: $Dark-Blue;
+  color: $White;
+}
+
+@import "./utilities/header.scss";
+@import "./utilities/body.scss";
+@import "./utilities/countries.scss";
+@import "./utilities/detail.scss";
+

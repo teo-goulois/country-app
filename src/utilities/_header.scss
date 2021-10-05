@@ -1,0 +1,33 @@
+.header-container {
+    
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+
+    @include breakpoint(small){
+        padding: 2rem 1rem;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    h2 {
+        margin-left: 0.5rem;
+        font-weight: 600;
+        font-size: 14px;
+    }
+}
+
+
+
+.toggler-dark-mode {
+    cursor: pointer;
+    display: flex;
+    display: flex;
+    align-items: center;
+}
+

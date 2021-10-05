@@ -1,0 +1,134 @@
+
+.detail {
+ min-height: 100vh;
+}
+.back-container {
+    padding: 1rem;
+    text-decoration: none;
+}
+.back {
+    padding: 0.5rem 1rem;
+    width: 6rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.detail-container {
+    display: flex;
+
+    @include breakpoint(small) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.detail-flag{
+    margin: 1rem;
+
+    img{
+       width: 600px;
+       height: 400px;
+
+       @include breakpoint(small) {
+        width: 350px;
+       height: 233.33px;
+    }
+    }
+}
+
+.detail-info-container {
+    
+    .top-info{
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+
+        @include breakpoint(small) {
+            flex-direction: column;
+            padding: 0 2rem;
+            width: 100vw;
+           
+        }
+
+        .left {
+
+           margin: 2rem;
+           @include breakpoint(small) {
+            margin: 0;
+            align-self: flex-start;
+        }
+            
+            h1 {
+                font-weight: 800;
+                margin-bottom: 1rem;
+                
+            }
+            p {
+                font-weight: 600;
+                
+                span {
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .right {
+            margin-top: 1rem;
+
+            @include breakpoint(small) {
+                margin-top: 1rem;
+                align-self: flex-start;
+            }
+            
+            p {
+                font-weight: 600;
+
+                span {
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+    .bot-info {
+        
+        display: flex;
+        margin: 0 2rem;
+        align-items: center;
+
+        @include breakpoint(small) {
+            flex-direction: column;
+            margin-top: 1rem;
+        }
+        h3 {
+            
+            margin-right: 1rem;
+            @include breakpoint(small) {
+                align-self: flex-start;
+            }
+            
+        }
+        .borders-container {
+            display: flex;
+            flex-wrap: wrap; 
+            align-self: flex-start;
+            
+            .borders{
+                padding: 0.5rem;
+                margin: 0.5rem;
+
+                @include breakpoint(small) {
+                    margin: 0.5rem 0;
+                    &:not(:last-child){
+                        margin-right: 0.5rem;
+                    }
+                }
+                
+            }
+        }
+       
+    }
+}
+
+.none {
+    padding: 0.5rem;
+}

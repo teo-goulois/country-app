@@ -1,0 +1,27 @@
+// BRREAKPOINTS
+$breakpoints: (
+    'small'  : 995px,
+    'Mobile': 375px,
+    'Desktop': 1440px
+  );
+
+
+// RESPONSIVE
+@mixin breakpoint($size){
+  @media (max-width: map-get($breakpoints, $size)){
+    @content;
+  }
+}
+
+// COLORS
+$Dark-Blue : hsl(209, 23%, 22%); // (Dark Mode Elements)
+$Dark-Very-Dark-Blue : hsl(207, 26%, 17%); // (Dark Mode Background)
+$Light-Very-Dark-Blue: hsl(200, 15%, 8%); //  (Light Mode Text)
+$Dark : hsl(0, 0%, 52%); // Gray (Light Mode Input)
+$Very-Light-Gray: hsl(0, 0%, 98%); //  (Light Mode Background)
+$White : hsl(0, 0%, 100%); // (Dark Mode Text & Light Mode Elements)
+
+// FONT
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+$font: 'Nunito Sans', sans-serif; // 300 600 800
